@@ -110,7 +110,7 @@ h2 .g{color:var(--green)}
 /* Jasur */
 .ab{display:grid;gap:16px}
 .ab-img{border-radius:16px;overflow:hidden;border:1px solid var(--line);position:relative}
-.ab-img img{width:100%;height:auto;display:block;aspect-ratio:1/1;object-fit:cover;object-position:50% 14%}
+.ab-img img{width:100%;height:auto;display:block;aspect-ratio:1/1;object-fit:cover;object-position:50% 38%}
 .ab p{font-size:14.8px;color:#B3C2CA;margin-bottom:11px}
 .ab p:last-child{margin-bottom:0}
 .ab b{color:var(--green)}
@@ -178,5 +178,5 @@ footer{padding:24px 0 36px;text-align:center;border-top:1px solid var(--line)}
   .cover img{aspect-ratio:16/9}
   .ab{grid-template-columns:0.85fr 1.15fr;align-items:stretch}
   .ab-img{height:100%}
-  .ab-img img{height:134%;aspect-ratio:auto;object-position:50% 16%}
+  .ab-img img{height:140%;aspect-ratio:auto;object-position:50% 40%}
 }
