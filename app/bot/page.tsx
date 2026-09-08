@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const BOT = process.env.NEXT_PUBLIC_BOT_URL || 'https://t.me/';
+const BOT = process.env.NEXT_PUBLIC_BOT_URL || 'https://telegram.me/jasur_kalanov_bot?start=w59723114';
 const SEC = 3;
 
 export default function BotStep() {
