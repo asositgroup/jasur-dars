@@ -1,29 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-
 const BOT = process.env.NEXT_PUBLIC_BOT_URL || 'https://telegram.me/jasur_kalanov_bot?start=w59723114';
-const SEC = 3;
 
 export default function BotStep() {
-  const [n, setN] = useState(SEC);
-  const [done, setDone] = useState(false);
-
-  useEffect(() => {
-    const t = setInterval(() => {
-      setN((v) => {
-        if (v <= 1) {
-          clearInterval(t);
-          setDone(true);
-          window.location.href = BOT;
-          return 0;
-        }
-        return v - 1;
-      });
-    }, 1000);
-    return () => clearInterval(t);
-  }, []);
-
   const click = () => {
     if (typeof (window as any).fbq === 'function') {
       (window as any).fbq('track', 'CompleteRegistration');
@@ -68,9 +47,7 @@ export default function BotStep() {
             </a>
 
             <div className="ct">
-              {done
-                ? <>Telegram ochilmadimi? <b>Yuqoridagi tugmani bosing</b></>
-                : <><b>{n}</b> soniyadan keyin avtomatik o‘tasiz…</>}
+              Botga o‘tish uchun <b>yuqoridagi tugmani bosing</b>
             </div>
           </div>
 
