@@ -197,7 +197,7 @@ export default function Page() {
           </p>
 
           <div className="cover" onClick={openForm}>
-            <Image src="/cover.jpg" alt="Jasur Kalonov" width={900} height={1390} priority />
+            <Image src="/cover.jpg" alt="Jasur Kalonov" width={1920} height={1080} priority />
             <div className="ov" />
             <div className="lock">🔒 Yopiq</div>
             <div className="free">BEPUL</div>
