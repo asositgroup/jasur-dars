@@ -1,8 +1,15 @@
 'use client';
 
+import { useEffect } from 'react';
+
 const BOT = process.env.NEXT_PUBLIC_BOT_URL || 'https://telegram.me/jasur_kalanov_bot?start=w59723114';
 
 export default function BotStep() {
+  useEffect(() => {
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+  }, []);
+
   const click = () => {
     if (typeof (window as any).fbq === 'function') {
       (window as any).fbq('track', 'CompleteRegistration');

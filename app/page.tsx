@@ -108,7 +108,10 @@ export default function Page() {
   useEffect(() => {
     const esc = (e: KeyboardEvent) => e.key === 'Escape' && closeForm();
     window.addEventListener('keydown', esc);
-    return () => window.removeEventListener('keydown', esc);
+    return () => {
+      window.removeEventListener('keydown', esc);
+      document.body.style.overflow = '';
+    };
   }, [closeForm]);
 
   /* ---------- Telefon maskasi ---------- */
@@ -157,6 +160,7 @@ export default function Page() {
       (window as any).ym((window as any).YM_ID, 'reachGoal', 'lead');
     }
 
+    document.body.style.overflow = '';
     router.push('/bot');
   };
 
